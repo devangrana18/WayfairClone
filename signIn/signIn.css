@@ -1,0 +1,121 @@
+.logo > img {
+    width: 250px;
+    margin-left: 600px;
+    margin-top: 10vh;
+  }
+  
+  .container {
+    width: 20%;
+    margin: auto;
+    margin-top: 5vh;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 0px 0px 20px 100px;
+  }
+  
+  .sign-in {
+    color: purple;
+    width: 30%;
+  }
+  
+  .username {
+    margin-bottom: 2vh;
+  }
+  
+  #signin-form {
+    width: 80%;
+  }
+  
+  .form-group {
+    margin: 10px;
+    margin-left: 0px;
+    width: 10%;
+  }
+  
+  button {
+    padding-left: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 2vh;
+    padding-right: 70px;
+    background-color: purple;
+    color: rgb(255, 255, 255);
+    border: 2px solid white;
+    border-radius: 20px;
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .logo > img {
+      margin-left: 300px;
+    }
+    .sign-in {
+        color: purple;
+        width: 60%;
+    }
+    .container {
+        width: 40%;
+        margin: auto;
+        margin-top: 5vh;
+        border: 1px solid black;
+        border-radius: 20px;
+        padding: 0px 0px 20px 100px;
+    }
+  }
+  
+  @media (min-width: 425px) and (max-width: 768px) {
+    .container {
+      width: 40%;
+      padding: 0px 0px 20px 50px;
+    }
+    .logo > img {
+        margin-left: 200px;
+      }
+  }
+  
+  @media (min-width: 375px) and (max-width: 426px) {
+    .logo > img {
+      width: 150px;
+      margin-left: 100px;
+      margin-top: 5vh;
+    }
+  
+    .container {
+      width: 70%;
+      padding: 0px 0px 20px 30px;
+    }
+  
+    #signin-form {
+      width: 90%;
+    }
+  
+    .form-group {
+      width: 20%;
+    }
+  }
+  
+  @media (min-width: 100px) and (max-width: 376px) {
+    .logo > img {
+      width: 120px;
+      margin-left: 70px;
+      margin-top: 5vh;
+    }
+  
+    .container {
+      width: 95%;
+      padding: 0px 0px 20px 20px;
+    }
+  
+    #signin-form {
+      width: 95%;
+    }
+  
+    .form-group {
+      width: 25%;
+    }
+  
+    button {
+      padding-left: 40px;
+      padding-right: 50px;
+    }
+  }
+  

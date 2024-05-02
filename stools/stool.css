@@ -37,7 +37,7 @@ nav{
 .signIn-cart{
     display: flex;
 }
-.nav-signIn > a{
+.nav-signIn {
     margin-left: 10vw;
     display: flex;
     align-items: center;
@@ -71,91 +71,28 @@ headerbottom */
     color: rgb(255, 24, 255);
     text-decoration: underline;
 }
-
-/* main body content */
-
-.home-cont{
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 8vh;
+.head{
+    margin: 2vw;
 }
-.home-cont-slider{
-    margin-left: 4vw;
-    margin-top: 3vh;
-    width: 53%;
-    border-radius: 5px;
-    overflow-y: hidden;
-    cursor: pointer;
-}
-.home-cont-slider >ul>{
-    display: flex;
-}
-.home-cont-slider >ul> a >img{
-    width: 100%;
-}
-.home-cont-slider >a{
-    position: absolute;
-    top: 20%;
-    z-index: 1;
-    padding: 3vh 1vw;
-    background-color: #ffffff;
-    color: #000000e3;
-    text-decoration:none;
-    font-weight: 600;
-    font-size: 18px;
-    cursor: pointer;
-    border-radius: 40px;
-}
-
-.control-prev{
-    margin-top: 35vh;
-}
-.control-next{
-    margin-left: 49.5vw;
-    margin-top: 35vh;
-}
-
-.home-cont-2{
-    width: 37%;
-    margin-top: 4vh;
-    margin-right: 3vw;
-    
-}
-.home-cont-2 > a > img{
-
-    width: 100%;
-    cursor: pointer;
-    border-radius: 10px;
-    
-}
-.dealsofDayimg > img{
-    width: 90%;
-    margin-left: 5vw;
-    cursor: pointer;
-    margin-bottom: 7vh;
-}
-
-#dealofday{
+#container{
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(3,1fr);
     gap: 20px;
     width: 90%;
     margin: auto;
-    margin-bottom: 3vh;
-    overflow-y:auto;
 }
 .product-card{
     border: 2px solid rgb(255, 255, 255);
+    cursor: pointer;
 
 }
 .product-card:hover{
-    cursor: pointer;
     border: 2px solid rgb(111, 111, 248);
     border-radius: 15px;
 }
 .product-img{
-    width: 220px;
-    height: 280px;
+    width: 400px;
+    height: 450px;
     margin-left: 1vw;
     margin-top: 2vh;
     border-radius: 20px;
@@ -185,19 +122,24 @@ headerbottom */
     color: aliceblue;
     padding-left: 1vw;
 }
-.video{
-    margin-left: 4vw;
-    border: 2px solid white;
-    border-radius: 20px;
-    width :90%;
 
+.sale-btn{
+    border: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    padding: 10px;
+    margin-left: 8vw;
+    cursor: pointer;
+    font-weight: 500;
 }
-.video:hover{
-   cursor: pointer;
-    border: 2px solid black;
+.price-btn{
+    border: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    padding: 10px;
+    margin-left: 2vw;
+    margin-bottom: 2vh;
+    cursor: pointer;
+    font-weight: 500;
 }
-
-/* footer Css*/
 
 
 .footer{
@@ -257,48 +199,7 @@ headerbottom */
     cursor: pointer;
 }
 
-@media screen and (min-width: 427px) and (max-width: 767px) {
-    .nav-bottom {
-        display: none; 
-    }
-    .nav-signIn > a{
-        margin-left: 2vw;
-    }
-    .nav-search{
-        display: flex;
-        margin-left: 4vw;
-        padding:10px ;
-        width: 290px;
-        border: 1px solid grey;
-        border-radius: 10px;
-    }
-}
 
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    .nav-bottom {
-        display: flex;
-        justify-content: space-evenly;
-    }
-    .video{
-        width: 100%;
-    }
-    .nav-bottom {
-        display: none; 
-    }.nav-signIn > a{
-        margin-left: 6vw;
-    }
-    .nav-search{
-        display: flex;
-        margin-left: 10vw;
-        padding:10px ;
-        width: 400px;
-        border: 1px solid grey;
-        border-radius: 10px;
-    }
-    
-   
-}
 
 @media screen and (min-width: 100px) and (max-width: 426px) {
     .nav-bottom {
@@ -306,6 +207,9 @@ headerbottom */
     }
     .nav-signIn > a{
         margin-left: 0vw;
+    }
+    .nav-signIn {
+        margin-left: 0px;
     }
     .nav-search{
         display: flex;
@@ -361,5 +265,155 @@ headerbottom */
     margin: auto;
     margin-top: 5vh;
 }
+#container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 20px;
+    width: 90%;
+    margin: auto;
+}
+.product-img{
+    width: 300px;
+    height: 350px;
+    margin-left: 1vw;
+    margin-top: 2vh;
+    border-radius: 20px;
+}
+
 }
  
+
+
+
+
+@media screen and (min-width: 427px) and (max-width: 768px) {
+    .nav-bottom {
+        display: none; 
+    }
+    .nav-signIn {
+        margin-left: 5vw;
+    }
+    
+    
+    #container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        width: 90%;
+        margin: auto;
+    }
+    .product-img{
+        width: 43vw;
+        height: 80vh;
+        margin-left: 1vw;
+        margin-top: 2vh;
+        border-radius: 20px;
+    }
+    .navbar>a>img{
+        width: 150px;
+    }
+    .nav-search{
+        display: flex;
+        margin-left: 3vw;
+        padding:10px ;
+        width: 280px;
+        border: 1px solid grey;
+        border-radius: 10px;
+    }
+    .Quick-help{
+        padding : 10px;
+        padding-left: 16px;
+        background-color: purple;
+        width: 15vw;
+        color: #ffffff;
+        font-weight: 600;
+        border-radius: 200px;
+        margin-top: 2vh;
+        cursor: pointer;
+    }
+    .Call-Us{
+        margin-top: 2vh;
+        padding : 10px;
+        padding-left: 25px;
+        color: purple;
+        width: 15vw;
+        border: 1px solid rgb(255, 24, 255);
+        font-weight: 600;
+        border-radius: 40px;
+        cursor: pointer;
+        margin-bottom: 5vh;
+    }
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .nav-bottom {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .video{
+        width: 100%;
+    }
+    .nav-bottom {
+        display: none; 
+    }.nav-signIn > a{
+        margin-left: 6vw;
+    }
+    
+    #container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        width: 90%;
+        margin: auto;
+    }
+     
+    #container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        width: 90%;
+        margin: auto;
+    }
+    .product-img{
+        width: 43vw;
+        height: 80vh;
+        margin-left: 1vw;
+        margin-top: 2vh;
+        border-radius: 20px;
+    }
+    .navbar>a>img{
+        width: 23vw;
+    }
+    .nav-search{
+        display: flex;
+        margin-left: 3vw;
+        padding:10px ;
+        width: 380px;
+        border: 1px solid grey;
+        border-radius: 10px;
+    }
+    .Quick-help{
+        padding : 10px;
+        padding-left: 3vw;
+        background-color: purple;
+        width: 15vw;
+        color: #ffffff;
+        font-weight: 600;
+        border-radius: 200px;
+        margin-top: 2vh;
+        cursor: pointer;
+    }
+    .Call-Us{
+        margin-top: 2vh;
+        padding : 10px;
+        padding-left: 3vw;
+        color: purple;
+        width: 15vw;
+        border: 1px solid rgb(255, 24, 255);
+        font-weight: 600;
+        border-radius: 40px;
+        cursor: pointer;
+        margin-bottom: 5vh;
+    }
+}
