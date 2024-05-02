@@ -199,6 +199,23 @@ headerbottom */
     cursor: pointer;
 }
 
+.add-to-cart-btn{
+    padding: 2vh 5vw 2vh 5vw;    
+    margin-left: 8vw;
+    cursor: pointer;
+    font-weight: 500;
+    background-color: rgb(247, 70, 70);
+    color: aliceblue;
+    border-radius: 10px;
+    border:2px solid grey;
+    margin-bottom:4vh ;
+}
+
+.add-to-cart-btn:hover{
+    border: 2px solid black;
+    font-weight: 600;
+}
+
 
 
 @media screen and (min-width: 100px) and (max-width: 426px) {
