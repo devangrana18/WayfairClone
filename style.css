@@ -9,7 +9,7 @@ a {
   text-decoration: none;
   color: inherit;
 }
-/* header css */
+
 .navbar > a > img {
   width: 200px;
 }
@@ -56,8 +56,7 @@ nav {
   cursor: pointer;
   color: rgb(255, 24, 255);
 }
-/* 
-headerbottom */
+
 .nav-bottom {
   padding-top: 10px;
   display: flex;
@@ -71,8 +70,6 @@ headerbottom */
   color: rgb(255, 24, 255);
   text-decoration: underline;
 }
-
-/* main body content */
 
 .home-cont {
   display: flex;
@@ -191,8 +188,6 @@ headerbottom */
   cursor: pointer;
   border: 2px solid black;
 }
-
-/* footer Css*/
 
 .footer {
   display: flex;
