@@ -311,33 +311,6 @@ function addProductCards(productsToShow) {
     container.appendChild(productCard);
   });
 }
-
-// window.onload = function () {
-//     let toggleButton = document.createElement("button");
-//     toggleButton.textContent = "Sale: OFF";
-//     let saleMode = false; // Initial state is OFF
-
-//     toggleButton.addEventListener("click", function () {
-//         saleMode = !saleMode; // Toggle saleMode
-//         if (saleMode) {
-//             let saleProducts = products.filter(product => product.sale === true);
-//             addProductCards(saleProducts);
-//             toggleButton.textContent = "Sale: ON";
-//             toggleButton.style.backgroundColor = "purple";
-//             toggleButton.style.color = "white"
-//         } else {
-//             addProductCards(products);
-//             toggleButton.textContent = "Sale: OFF";
-//             toggleButton.style.backgroundColor = "";
-//             toggleButton.style.color = ""
-//         }
-//     });
-
-//     document.body.insertBefore(toggleButton, document.getElementById("container"));
-
-//     addProductCards(products);
-// };
-
 window.onload = function () {
   let saleMode = false; 
   let priceMode = ""; 
